@@ -25,7 +25,7 @@ def saft(g, x, z, cl, T, t):
     for j in range(31):
       for i in range(400):
         coord_x = j*1e-3  #coordenadas para eixo x da ROI e passo de 1mm = 1e-3m
-        coord_z = ((t[i]*cl)/2) #[m]*[m/s] = [m] coordenadas para eixo z da ROI
+        coord_z = z[i] #[m]*[m/s] = [m] coordenadas para eixo z da ROI
         for transdutor in range(31):
           coord_transd_x = transdutor*1e-3 #coordenada para eixo x do transdutor e passo de 1mm
           coord_transd_z = 0 #transdutor se mantém em 0 para o eixo z  

@@ -32,13 +32,13 @@ z=(cl*t)*1e-3 #posições no eixo z em mm
 #eixo x vai de -11 a 3 [mm]
 #eixo z vai de 12 a 28 [mm]
 x_min = np.argmin(np.abs(x-(-10)))
-print('x_min = {}' .format(x_min))
+#print('x_min = {}' .format(x_min))
 x_max = np.argmin(np.abs(x-(-5)))
-print('x_max = {}' .format(x_max))
+#print('x_max = {}' .format(x_max))
 z_min = np.argmin(np.abs(z-12))
-print('z_min = {}' .format(z_min))
+#print('z_min = {}' .format(z_min))
 z_max = np.argmin(np.abs(z-17.5))
-print('z_max = {}' .format(z_max))
+#print('z_max = {}' .format(z_max))
 
 #ascans necessários para algoritmo
 g = ascans[:, :, :]
@@ -76,15 +76,15 @@ def tfm (g,x,z,t,cl):
                     t_e_r = (dist/cl)*1e3
                     #print(dist)
 
-                    print('j = {}'.format(j))
-                    print('i = {}'.format(i))
-                    print('emissor = {}'.format(emissores))
-                    print('receptor = {}'.format(receptores))
+                    #print('j = {}'.format(j))
+                    #print('i = {}'.format(i))
+                    #print('emissor = {}'.format(emissores))
+                    #print('receptor = {}'.format(receptores))
 
                     indice1 = np.argmin(np.abs(z - dist))
                     indice2 = np.argmin(np.abs(t - t_e_r))
-                    print('indice1 = {}'.format(indice1))
-                    print('indice2 = {}'.format(indice2))
+                    #print('indice1 = {}'.format(indice1))
+                    #print('indice2 = {}'.format(indice2))
 
                     f[i-36, j-13] += g[indice2, emissores, receptores]
                     s_sum += 1 #registra, ao final, o número total de operações de soma envolvidas

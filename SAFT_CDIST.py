@@ -1,3 +1,5 @@
+#Algoritmo otimizado do original SAFT_MateusYM 
+
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.spatial.distance import cdist

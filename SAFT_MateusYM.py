@@ -36,14 +36,14 @@ def saft(g, x, z, cl, T, t):
           delta_z_pow2 = np.power(delta_z, 2)
 
           dist = np.sqrt(delta_x_pow2 + delta_z_pow2) #teorema de pitágoras dist = raiz_quadrada(delta_x^2 + delta_z^2)
-          print('dist = {}' .format(dist))
+          #print('dist = {}' .format(dist))
   
-          print('j = {}' .format(j))
-          print('i = {}' .format(i))
-          print('transdutor = {}' .format(transdutor))
+          #print('j = {}' .format(j))
+          #print('i = {}' .format(i))
+          #print('transdutor = {}' .format(transdutor))
 
           indice = np.argmin(np.abs(z-dist)) #índice relativo ao argumento mínimo entre a distancia convertida e a distancia calculada
-          print('indice = {}' .format(indice))
+          #print('indice = {}' .format(indice))
 
           f[i,j] += g[indice,transdutor] #matriz da imagem composta pela amplitude do Ascan no índice e o valor anterior de amplitude já contido
           

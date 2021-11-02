@@ -32,9 +32,9 @@ def newton_raphson():
     delta = x[1] - x[0]
     for x_est in x:
         f_linha = derivada(f, x_est, delta)
-        iteracao = f(x_est) - (f(x_est)/f_linha)
+        iteracao = (f(x_est)/f_linha)
         iteracao_abs = np.abs(iteracao)
-        if iteracao_abs <= 0.01:
+        if iteracao_abs <= 0.001:
             break
             
     return x_est

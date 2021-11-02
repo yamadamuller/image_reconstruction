@@ -24,7 +24,7 @@ def min_max_funcao():
     x_est_aprox = indice*delta #x_est ligado ao índice do mínimo
     return round(x_est_aprox,2)
 
-print('O valor de mínimo/máximo da função é aproximadamente = {}' .format(min_max_funcao()))
+print('O valor x de mínimo/máximo da função é aproximadamente = {}' .format(min_max_funcao()))
 
 def newton_raphson():
     lista = []
